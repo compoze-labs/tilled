@@ -1,0 +1,30 @@
+{
+    "name": "tilled",
+    "version": "0.0.1",
+    "description": "Library to quickly integrate with Tilled.io APIs",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc -p tsconfig.build.json",
+        "prepublish": "npm run build",
+        "postinstall": "npx openapi-generator-cli generate -i https://api.tilled.com/docs/spec3.json -g typescript-axios",
+        "test": "jest --config=jest.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/compoze-labs/tilled.git"
+    },
+    "keywords": [
+        "tilled"
+    ],
+    "author": "compoze-labs",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/compoze-labs/tilled/issues"
+    },
+    "homepage": "https://github.com/compoze-labs/tilled#readme",
+    "devDependencies": {
+        "@openapitools/openapi-generator-cli": "^2.5.1",
+        "typescript": "^4.7.4"
+    }
+}

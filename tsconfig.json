@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "CommonJS",
+    "target": "ES2017",
+    "sourceMap": true,
+    "declaration": true,
+    "noImplicitAny": true,
+    "preserveConstEnums": true,
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": true
+  }
+}
