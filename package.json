@@ -23,8 +23,10 @@
         "url": "https://github.com/compoze-labs/tilled/issues"
     },
     "homepage": "https://github.com/compoze-labs/tilled#readme",
+    "dependencies": {
+        "@openapitools/openapi-generator-cli": "^2.5.1"
+    },
     "devDependencies": {
-        "@openapitools/openapi-generator-cli": "^2.5.1",
         "typescript": "^4.7.4"
     }
 }
